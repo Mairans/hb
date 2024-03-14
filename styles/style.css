@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Pontano+Sans:wght@300..700&display=swap');
+
+* {
+    font-family: "Birthstone", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: auto;
+    background-color: #d4c6f1;
+}
+
+.overlay {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #d4c6f1;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.overlay span {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.5rem;
+    color: #000;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.buket {
+    right: 0;
+    top: 207px;
+    z-index: 5;
+}
+
+.face {
+    transform: rotate(-15deg);
+}
+
+.face2 {
+    transform: rotate(16deg);
+}
+
+.face3 {
+    transform: rotate(-16deg);
+}
+
+.face4 {
+    transform: rotate(-18deg);
+}
+
+.face5 {
+    transform: rotate(13deg);
+}
+
+.box-img1 img {
+    margin-left: 70px;
+}
+
+.box-img2 img {
+    margin-left: 70px;
+}
+
+.box-im3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cat1 {
+    animation: rotate 3s infinite;
+    transition: all .5s;
+}
+
+.cat2 {
+    transform: scale(-1, 1);
+    animation: Mirror 3s infinite;
+}
+
+@keyframes Mirror {
+    to {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(-1, 1);
+    }
+
+    40% {
+        transform: scale(1);
+    }
+
+    60% {
+        transform: scale(-1, 1);
+    }
+
+    80% {
+        transform: scale(1);
+    }
+
+    from {
+        transform: scale(-1, 1);
+    }
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(0);
+    }
+
+    20% {
+        transform: rotate(120deg);
+    }
+
+    40% {
+        transform: rotate(240deg);
+    }
+
+    60% {
+        transform: rotate(360deg);
+    }
+
+    80% {
+        transform: rotate(240deg);
+    }
+
+    from {
+        transform: rotate(0);
+    }
+
+}
+
+@media (max-width: 390px) {
+    body .container {
+        display: block;
+        position: relative;
+    }
+
+    img {
+        position: absolute;
+        width: 120px;
+        height: auto;
+    }
+
+    .cat1 {
+        width: 100px;
+        top: 32px;
+        right: 167px;
+    }
+
+    .cat2 {
+        width: 100px;
+        top: 500px;
+        right: 150px;
+    }
+}
+
+
+
+.buket {
+    width: 400px;
+    right: 0;
+    top: 207px;
+}
+
+.face {
+    transform: rotate(-15deg);
+    top: 32px;
+    right: 265px;
+}
+
+.face2 {
+    transform: rotate(16deg);
+    top: 551px;
+    right: 45px;
+}
+
+.face3 {
+    top: 662px;
+    right: 213px;
+}
+
+.face4 {
+    top: 521px;
+    right: 235px;
+    transform: rotate(-18deg);
+}
+
+.face5 {
+    transform: rotate(13deg);
+    top: 25px;
+    right: 32px;
+}
